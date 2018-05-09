@@ -1,0 +1,67 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	font-family: "Tahoma" ,sans-serif;
+	color: #666;/*some gray*/
+	background: #f9f9f9
+	font-size: 14px;
+	line-height: 1.6em;
+}
+
+ul, li {
+	list-style: none;
+}
+
+#container {
+	width: 60%;
+	margin: 30px auto;
+	overflow: auto;
+}
+
+h1 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.title{
+	height: 40px;
+	background:#6bb170 ; /*#6bb170 verde*/
+	color: #fff;/* alb*/
+	text-align: center;
+	padding-top: 13px;
+}
+
+.faq li{ /*atat intrebare cat si raspuns*/
+	padding: 20px;
+}
+
+.faq li.q{ /*doar pt intrebare*/
+	background: #eee;
+	font-weight: bold;
+	font-size: 110%;
+	border-bottom: 1px #ddd solid;
+	cursor: pointer;
+} 
+
+.faq li.a {/*doar pt raspuns*/
+	background: #ddd; 
+	display: none;/*ascunde raspunsul*/
+}
+
+/*facem pagina si mai responsiva adica daca micsorez sub 800px latime*/
+/*atunci width trece din 60% in 90%, pentru a scoate cat m.m. din margini */
+
+@media (max-width: 800px){
+	#container{
+		width: 90%;
+	}
+}
+
+.rotate {
+	-moz-transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
